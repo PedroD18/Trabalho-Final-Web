@@ -1,0 +1,96 @@
+.conteudo h1 {
+  color: var(--cor-principal);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.texto-topo {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+}
+
+.cards-contato {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.card-contato {
+  background-color: var(--cor-branco);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+}
+
+.card-contato .icone {
+  font-size: 40px;
+}
+
+.card-contato h3 {
+  color: var(--cor-principal);
+  margin: 10px 0;
+}
+
+.bloco {
+  background-color: var(--cor-branco);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+.bloco h2 {
+  color: var(--cor-principal);
+  margin-bottom: 15px;
+}
+
+.horarios p,
+.redes p {
+  margin: 8px 0;
+}
+
+.formulario-contato {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  gap: 6px;
+}
+
+.formulario-contato label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.formulario-contato input,
+.formulario-contato textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.formulario-contato .botao {
+  margin-top: 20px;
+  width: fit-content;
+}
+
+.aviso {
+  margin-top: 15px;
+  color: var(--cor-principal);
+  font-weight: bold;
+}
+
+.pergunta {
+  margin-bottom: 20px;
+}
+
+.pergunta h3 {
+  color: var(--cor-principal);
+  margin-bottom: 5px;
+}

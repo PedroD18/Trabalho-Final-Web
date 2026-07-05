@@ -1,0 +1,44 @@
+.caixa-login {
+  max-width: 350px;
+  margin: 40px auto;
+  background-color: var(--cor-branco);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.caixa-login h1 {
+  color: var(--cor-principal);
+  margin-bottom: 5px;
+}
+
+.caixa-login form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 15px;
+  text-align: left;
+}
+
+.caixa-login label {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.caixa-login input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.caixa-login .botao {
+  margin-top: 15px;
+}
+
+.mensagem {
+  margin-top: 15px;
+  color: red;
+  font-weight: bold;
+}

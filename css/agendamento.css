@@ -1,0 +1,46 @@
+.conteudo h1 {
+  color: var(--cor-principal);
+  margin-bottom: 5px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  gap: 6px;
+  margin-top: 20px;
+}
+
+.formulario label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.formulario input,
+.formulario select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.formulario .subtitulo {
+  margin-top: 25px;
+  color: var(--cor-principal);
+  font-size: 20px;
+}
+
+.formulario .botao {
+  margin-top: 20px;
+}
+
+.formulario .botao-cep {
+  margin-top: 10px;
+  width: fit-content;
+}
+
+.mensagem {
+  margin-top: 15px;
+  color: var(--cor-principal);
+  font-weight: bold;
+}

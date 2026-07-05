@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+  <header class="cabecalho">
+    <div class="logo">🐾 Pet Shop Amigo Fiel</div>
+    <nav class="menu">
+      <a href="index.html">Voltar ao site</a>
+    </nav>
+  </header>
+
+  <main class="conteudo">
+    <div class="caixa-login">
+      <h1>Área administrativa</h1>
+      <p>Faça login para acessar o painel administrativo</p>
+
+      <form id="formLogin">
+        <label for="usuario">Usuário</label>
+        <input type="text" id="usuario" required>
+
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" required>
+
+        <button type="submit" class="botao">Entrar</button>
+      </form>
+
+      <p id="mensagemLogin" class="mensagem"></p>
+    </div>
+  </main>
+
+  <script src="js/login.js"></script>
+</body>
+</html>

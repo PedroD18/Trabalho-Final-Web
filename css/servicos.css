@@ -1,0 +1,10 @@
+.conteudo h1 {
+  color: var(--cor-principal);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.texto-topo {
+  text-align: center;
+  margin-bottom: 30px;
+}

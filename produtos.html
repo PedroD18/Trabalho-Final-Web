@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produtos</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/produtos.css">
+</head>
+<body>
+
+  <header class="cabecalho">
+    <div class="logo">🐾 Pet Shop Amigo Fiel</div>
+    <nav class="menu">
+      <a href="index.html">Início</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="produtos.html" class="ativo">Produtos</a>
+      <a href="agendamento.html">Agendamento</a>
+      <a href="contato.html">Contato</a>
+      <a href="login.html">Administração</a>
+    </nav>
+  </header>
+
+  <main class="conteudo">
+    <h1>Nossos Produtos</h1>
+    <p class="texto-topo">Tudo o que o seu pet precisa em um só lugar.</p>
+
+    <div class="filtro">
+      <label for="categoria">Filtrar por categoria:</label>
+      <select id="categoria" onchange="mostrarProdutos()">
+        <option value="todos">Todos</option>
+        <option value="Ração">Ração</option>
+        <option value="Brinquedo">Brinquedo</option>
+        <option value="Acessório">Acessório</option>
+        <option value="Higiene">Higiene</option>
+      </select>
+    </div>
+
+    <div class="lista-cartoes" id="listaProdutos"></div>
+  </main>
+
+  <footer class="rodape">
+    <div class="rodape-colunas">
+      <div class="rodape-coluna">
+        <h3>🐾 Pet Shop Amigo Fiel</h3>
+        <p>Cuidando do seu melhor amigo com amor e dedicação desde 2015. Banho, tosa, veterinário e muito mais.</p>
+      </div>
+
+      <div class="rodape-coluna">
+        <h4>Contato</h4>
+        <p>Rua dos animais, 1234 - Salinas, MG</p>
+        <p>📞 (38) 3800-0000</p>
+        <p>contato@amigofiel.com.br</p>
+      </div>
+
+      <div class="rodape-coluna">
+        <h4>Horário e redes</h4>
+        <p>Seg a Sex: 07h às 17h</p>
+        <p>Sábado: 09h às 12h</p>
+        <p>Domingo: Fechado</p>
+        <p>@petshopamigofiel</p>
+      </div>
+    </div>
+
+    <div class="rodape-base">
+      <p>2026 Pet Shop Amigo Fiel - CNPJ: 12.345.678/0000-00</p>
+    </div>
+  </footer>
+
+  <script src="js/produtos.js"></script>
+</body>
+</html>

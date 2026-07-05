@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendamento</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/agendamento.css">
+</head>
+<body>
+
+  <header class="cabecalho">
+    <div class="logo">🐾 Pet Shop Amigo Fiel</div>
+    <nav class="menu">
+      <a href="index.html">Início</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="agendamento.html" class="ativo">Agendamento</a>
+      <a href="contato.html">Contato</a>
+      <a href="login.html">Administração</a>
+    </nav>
+  </header>
+
+  <main class="conteudo">
+    <h1>Agende um serviço</h1>
+    <p>Preencha o formulário abaixo para agendar um horário.</p>
+
+    <form class="formulario" id="formAgendamento">
+      <label for="tutor">Nome do tutor</label>
+      <input type="text" id="tutor" required>
+
+      <label for="pet">Nome do pet</label>
+      <input type="text" id="pet" required>
+
+      <label for="servico">Tipo de serviço</label>
+      <select id="servico" required>
+        <option value="">Selecione uma opção</option>
+        <option value="Banho">Banho</option>
+        <option value="Tosa">Tosa</option>
+        <option value="Consulta veterinária">Consulta veterinária</option>
+        <option value="Vacinação">Vacinação</option>
+      </select>
+
+      <label for="data">Data</label>
+      <input type="date" id="data" required>
+
+      <label for="horario">Horário</label>
+      <input type="time" id="horario" required>
+
+      <label for="telefone">Telefone</label>
+      <input type="tel" id="telefone" required>
+
+      <h2 class="subtitulo">Localização</h2>
+
+      <label for="cep">CEP</label>
+      <input type="text" id="cep">
+      <button type="button" class="botao botao-cep" onclick="buscarCep()">Buscar endereço</button>
+
+      <label for="rua">Rua</label>
+      <input type="text" id="rua">
+
+      <label for="numero">Número</label>
+      <input type="text" id="numero">
+
+      <label for="bairro">Bairro</label>
+      <input type="text" id="bairro">
+
+      <label for="cidade">Cidade</label>
+      <input type="text" id="cidade">
+
+      <label for="estado">Estado</label>
+      <input type="text" id="estado">
+
+      <button type="submit" class="botao">Confirmar agendamento</button>
+    </form>
+
+    <p id="mensagem" class="mensagem"></p>
+  </main>
+
+  <footer class="rodape">
+    <div class="rodape-colunas">
+      <div class="rodape-coluna">
+        <h3>🐾 Pet Shop Amigo Fiel</h3>
+        <p>Cuidando do seu melhor amigo com amor e dedicação desde 2015. Banho, tosa, veterinário e muito mais.</p>
+      </div>
+
+      <div class="rodape-coluna">
+        <h4>Contato</h4>
+        <p>Rua dos animais, 1234 - Salinas, MG</p>
+        <p>📞 (38) 3800-0000</p>
+        <p>contato@amigofiel.com.br</p>
+      </div>
+
+      <div class="rodape-coluna">
+        <h4>Horário e redes</h4>
+        <p>Seg a Sex: 07h às 17h</p>
+        <p>Sábado: 09h às 12h</p>
+        <p>Domingo: Fechado</p>
+        <p>@petshopamigofiel</p>
+      </div>
+    </div>
+
+    <div class="rodape-base">
+      <p>2026 Pet Shop Amigo Fiel - CNPJ: 12.345.678/0000-00</p>
+    </div>
+  </footer>
+
+  <script src="js/agendamento.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel Administrativo</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+  <header class="cabecalho">
+    <div class="logo">🐾 Pet Shop Amigo Fiel</div>
+    <nav class="menu">
+      <a href="index.html">Ver site</a>
+    </nav>
+  </header>
+
+  <main class="conteudo">
+
+    <div class="topo-admin">
+      <h1>Painel administrativo</h1>
+      <button class="botao" onclick="sair()">Sair</button>
+    </div>
+
+    <div class="abas">
+      <button class="aba ativa" onclick="mostrarAba('agendamentos', this)">Agendamentos</button>
+      <button class="aba" onclick="mostrarAba('produtos', this)">Produtos</button>
+      <button class="aba" onclick="mostrarAba('servicos', this)">Serviços</button>
+    </div>
+
+    <section id="aba-agendamentos" class="secao-aba">
+      <h2>Agendamentos</h2>
+      <div id="listaAgendamentos"></div>
+    </section>
+
+    <section id="aba-produtos" class="secao-aba escondido">
+      <h2>Produtos</h2>
+      <div class="form-admin">
+        <input type="text" id="nomeProduto" placeholder="Nome do produto">
+        <select id="categoriaProduto">
+          <option value="Ração">Ração</option>
+          <option value="Brinquedo">Brinquedo</option>
+          <option value="Acessório">Acessório</option>
+          <option value="Higiene">Higiene</option>
+        </select>
+        <input type="text" id="precoProduto" placeholder="Preço">
+        <button class="botao" onclick="adicionarProduto()">Adicionar</button>
+      </div>
+      <div id="listaProdutosAdmin"></div>
+    </section>
+
+    <section id="aba-servicos" class="secao-aba escondido">
+      <h2>Serviços</h2>
+      <div class="form-admin">
+        <input type="text" id="nomeServico" placeholder="Nome do serviço">
+        <input type="text" id="descricaoServico" placeholder="Descrição">
+        <input type="text" id="precoServico" placeholder="Preço ">
+        <button class="botao" onclick="adicionarServico()">Adicionar</button>
+      </div>
+      <div id="listaServicosAdmin"></div>
+    </section>
+
+  </main>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>
